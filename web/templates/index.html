@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/index.css') }}">
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</head>
+<body>
+   
+    <div id = "main_container">
+        <div class = "content_container">
+          <div class = "inner_container">
+            <div class="inner_container_header">
+              ფაილის ატვირთვა
+            </div>
+            <div class="left">
+              <div class='picture_container'>
+                  <img id="pic" class="hidden picture" src="#" alt="your image"/>
+              </div>
+            </div>
+            <div class="right">
+              <form id="uploadform" method="post" enctype="multipart/form-data">
+<!--                 <label for="file">აირჩიეთ ფაილი</label> -->
+                <input id="file_input" name="file" class='button' type="file">
+                <a id="submit" type="button" class='button' >ატვირთვა</a>
+              </form>
+               <a id = "output_file" href="fdsfd" class="hidden button" download>ჩამოტვირთვა</a>
+              </div>
+            </div>          
+        </div>
+   </div> 
+
+
+</body>
+</html>
